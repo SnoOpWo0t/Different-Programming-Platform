@@ -4,17 +4,18 @@ int main ()
 {
     int i,t;
     cin>>t;
-    for(i = 0; i<t;i++)
+    for(i = 0 ; i<t;i++)
     {
         int n,x;
         cin>>n>>x;
-        if(x<n)
+        if(x>=n)
         {
-            cout<<"NO"<<endl;
+            cout<<0<<endl;
         }
         else
         {
-            cout<<"YES"<<endl;
+            int sub = n-x;
+            cout<<sub<<endl;
         }
     }
 }
