@@ -6,7 +6,7 @@ int main()
     int n ;
     cin>> n ;
     int a [n];
-   float avg = 0,sum = 0;
+   double avg = 0,sum = 0;
     for(int i = 0 ; i<n ; i++)
     {
         cin>>a[i];
