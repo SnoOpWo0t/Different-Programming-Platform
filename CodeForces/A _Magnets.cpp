@@ -8,7 +8,6 @@ int main ()
     for(int i = 0 ; i <t ; i++)
     {
         cin>>a[i];
-        
     }
     for(int j = 0 ; j<t-1;j++)
     {
@@ -16,7 +15,6 @@ int main ()
         {
             count++;
         }
-
     }
     cout<<count<<endl;
 }
