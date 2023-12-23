@@ -1,29 +1,21 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-
-int main()
+int main ()
 {
-    int n, t, i;
-    cin >> n >> t;
-    string st;
-    cin >> st;
-
-    for (i = 0; i < t; i++)
+    int t,count = 1;
+    cin>>t;
+    for(int i = 0 ; i<t; i++)
     {
-        for (int j = 0; j < n - 1; j++)
+       long long int a,b;
+        cin>>a>>b;
+        if(a%b==0)
         {
-            if (st[j] == 'B' && st[j + 1] == 'G')
-            {
-                swap(st[j], st[j + 1]);
-                j++;
-            }
+            cout<<0<<endl;
+            count = 0;
         }
+        else{
+            cout<<b-(a%b)<<endl;
+        }
+        
     }
-
-    for (i = 0; i < n; i++)
-    {
-        cout << st[i];
-    }
-
-    return 0;
 }
