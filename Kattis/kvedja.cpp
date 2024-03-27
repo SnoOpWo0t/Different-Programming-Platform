@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    string s ;
+    string s;
     cin>>s;
-    cout<<char(s[0])<<endl;
+    cout<<"Kvedja,\n"<<s<<"\n";
 }
