@@ -1,9 +1,8 @@
-seedcost = float(input())
-lawns = float(input())
-cost = 0
+n = int(input())
+a = []
+b =[0]*n
+for i in range(n):
+   a.append(int(input()))
 
-for lawn in range(lawns):
-    w,l = list(map(float,input().split()))
-    area = w*l
-    cost += area*seedcost
-print(cost)
+b = a[::-1]
+print(b)
