@@ -1,0 +1,12 @@
+a, b = map(int, input().split())
+sum_value = 0
+i = 0
+
+while True:
+    i += 1
+    sum_value += a
+    if sum_value % 10 == 0 or sum_value % 10 == b:
+        print(i)
+        break
+    else:
+        continue
